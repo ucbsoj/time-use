@@ -13,9 +13,9 @@
 
 <Hero
 	hed="This is a placeholder headline"
-	dek="Welcome to this demo"
+	dek="Welcome to this demo" 
 	byline="By This Person and That Person"
-	src="/demo/assets/test.jpg"
+	src="demo/assets/test.jpg"
 	alt="A lake and some clouds"
 />
 

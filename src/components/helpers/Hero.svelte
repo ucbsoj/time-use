@@ -1,5 +1,5 @@
 <script>
-	const { hed, dek, byline, src, alt } = $props();
+	const { hed, dek, date, byline, src, alt } = $props();
 </script>
 
 <div class="hero">
@@ -13,6 +13,7 @@
 		{#if hed}<h1>{@html hed}</h1>{/if}
 		{#if dek}<h2>{@html dek}</h2>{/if}
 		{#if byline}<p>{@html byline}</p>{/if}
+		{#if date}<p>{@html date}</p>{/if}
 	</div>
 </div>
 
