@@ -48,7 +48,7 @@
 	.text {
 		max-width: 40rem;
 		padding: 16px;
-		margin: 20em auto;
+		margin: 0 auto;
 	}
 
 	section {

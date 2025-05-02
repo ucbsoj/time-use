@@ -22,6 +22,7 @@
 		width: 100vw;
 		height: 100vh;
 		position: relative;
+		transition: opacity 0.5s ease;
 	}
 
 	img,
