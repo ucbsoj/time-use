@@ -50,12 +50,130 @@
 
 		<div class="spacer"></div>
 	</section>
+
+	<div class="text">
+		<p>We collected two stories from single women.</p>
+		<!-- First Profile -->
+		<div class="container-row">
+			<!-- Left column: profile image and audio player -->
+			<div class="media-column">
+				<img src="/demo/assets/Annie.jpeg" alt="Annie Chang" class="profile-img" />
+				<audio controls class="audio">
+  					<source src="/demo/assets/annie-intv.mp3" type="audio/mpeg" />
+				</audio>
+			</div>
+		
+			<!-- Right column: text content -->
+			<div class="text-column">
+				<h3>Annie Chang</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit delectus cum doloremque ea perspiciatis cumque nam, esse reiciendis laboriosam iusto autem sunt ipsa odit eum voluptates aliquid? Voluptatem, cum?
+				</p>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magnam ab rerum pariatur laudantium est eum. Dolores asperiores aliquam iusto saepe voluptate libero excepturi. Iure minus harum fuga ullam. Doloribus.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quas. Optio incidunt repudiandae, voluptatem temporibus ducimus hic voluptatibus repellendus quasi sed quisquam fuga laborum ullam, quis quae deserunt ex aperiam!
+				</p>
+			</div>
+		</div>
+
+		<!-- Second Profile -->
+
+		<div class="container-row">
+			<!-- Left column: profile image and audio player -->
+			<div class="media-column">
+				<img src="/demo/assets/grandma.jpeg" alt="Grandma" class="profile-img" />
+				<audio controls class="audio">
+  					<source src="/demo/assets/annie-intv.mp3" type="audio/mpeg" />
+				</audio>
+			</div>
+		
+			<!-- Right column: text content -->
+			<div class="text-column">
+				<h3>Grandma</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit delectus cum doloremque ea perspiciatis cumque nam, esse reiciendis laboriosam iusto autem sunt ipsa odit eum voluptates aliquid? Voluptatem, cum?
+				</p>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magnam ab rerum pariatur laudantium est eum. Dolores asperiores aliquam iusto saepe voluptate libero excepturi. Iure minus harum fuga ullam. Doloribus.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quas. Optio incidunt repudiandae, voluptatem temporibus ducimus hic voluptatibus repellendus quasi sed quisquam fuga laborum ullam, quis quae deserunt ex aperiam!
+				</p>
+			</div>
+		</div>
+	</div>
+		
+
+	<div class="text">
+		<h3>So why do women tend to stay alone during their old ages?</h3>
+		<p>The average life expectancy of women in the U.S. is 80.2 years, while for men it's only 74.8 years. So, in a heterosexual relationship where both partners are the same age and get married in middle age (let’s say around 40), the woman will, on average, live about 5.4 years longer than her partner. So, if they both reach their 40s and stay healthy into older age, she is likely to outlive him by over 5 years.</p>
+
+		<!-- insert a datawrapper iframe here -->
+
+		<h3>So what if she gets remarried?</h3>
+		<p>The average remarriage rate of women after 55 years of age is 1.13 times less likely than men. That means for every 113 men that get remarried, only 100 women do on average.</p>
+		<!-- insert a datawrapper iframe here -->
+	</div>
 </div>
 
 
 <Footer />
 
 <style>
+
+	.container-row {
+		display: flex;
+		align-items: stretch; /* Ensure both columns align vertically */
+		gap: 2rem;
+		max-width: 960px;
+		margin: 2rem auto;
+	}
+
+	/* Left column: image and audio vertically stacked */
+	.media-column {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; /* Spread image and audio */
+		width: 40%;
+	}
+
+	/* Image with flexible height and preserved aspect ratio */
+	.profile-img {
+		width: 100%;
+		height: 80%;
+		flex-grow: 1;
+		object-fit: cover;
+		margin-bottom: 1rem;
+		border-radius: 8px; /* optional: rounded corners */
+	}
+
+	/* Audio player sits below the image */
+	.audio {
+		width: 100%;
+	}
+
+	/* Right column: text content */
+	.text-column {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+
+
+	.h3{
+		max-width: 100%;
+		margin: auto auto;
+	}
+
+	.text {
+		max-width: 40rem;
+		padding: 16px;
+		margin: auto auto;
+	}
 
 	.media-img,
 	.media-iframe {
