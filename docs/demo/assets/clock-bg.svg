@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="cover" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 18px;
+      }
+
+      .cls-3 {
+        fill: #e6e6e5;
+      }
+
+      .cls-4 {
+        fill: #f1d39e;
+      }
+    </style>
+    <filter id="drop-shadow-1" x="322" y="114" width="810" height="810" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur" stdDeviation="10"/>
+      <feFlood flood-color="#474445" flood-opacity=".5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="big_bg" class="cls-4" width="1440" height="1024"/>
+  <g id="clock" class="cls-1">
+    <path class="cls-2" d="M1069.95,618.47c13.74-45.24,18.54-92.17,14.26-139.46-4.28-47.3-17.43-92.6-39.08-134.63-22.42-43.53-53.01-81.63-90.92-113.24-37.91-31.61-80.89-54.86-127.74-69.09-45.24-13.74-92.16-18.54-139.46-14.26-47.3,4.28-92.59,17.43-134.63,39.08-43.53,22.42-81.63,53.01-113.24,90.92-31.61,37.91-54.86,80.89-69.09,127.74-13.74,45.24-18.54,92.16-14.26,139.46,4.28,47.3,17.43,92.59,39.08,134.63,22.42,43.53,53.01,81.63,90.92,113.24,37.91,31.61,80.89,54.86,127.74,69.09,45.24,13.74,92.16,18.54,139.46,14.26,47.3-4.28,92.59-17.43,134.63-39.08,43.53-22.42,81.63-53.01,113.24-90.92,31.61-37.91,54.86-80.89,69.09-127.74Z"/>
+    <path class="cls-3" d="M681.93,514.47h185.68c3.52,0,6.39,2.86,6.39,6.39v2.08c0,3.52-2.86,6.39-6.39,6.39h-185.68c-3.52,0-6.39-2.86-6.39-6.39v-2.08c0-3.52,2.86-6.39,6.39-6.39Z" transform="translate(-43.92 72.02) rotate(-5.18)"/>
+    <path class="cls-3" d="M579.95,422.71h260.9c1.99,0,3.61,1.62,3.61,3.61v3.25c0,1.99-1.62,3.61-3.61,3.61h-260.9c-1.99,0-3.61-1.62-3.61-3.61v-3.25c0-1.99,1.62-3.61,3.61-3.61Z" transform="translate(1119.07 -293.71) rotate(88.46)"/>
+    <rect class="cls-3" x="489.05" y="584.39" width="293.39" height="4.13" transform="translate(1497.85 656.29) rotate(141.94)"/>
+  </g>
+</svg>
