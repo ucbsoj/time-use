@@ -572,15 +572,12 @@
 			<!-- Right column: text content -->
 			<div class="text-column">
 				<h3>Shirley Streshinsky</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit delectus cum doloremque ea perspiciatis cumque nam, esse reiciendis laboriosam iusto autem sunt ipsa odit eum voluptates aliquid? Voluptatem, cum?
-				</p>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magnam ab rerum pariatur laudantium est eum. Dolores asperiores aliquam iusto saepe voluptate libero excepturi. Iure minus harum fuga ullam. Doloribus.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quas. Optio incidunt repudiandae, voluptatem temporibus ducimus hic voluptatibus repellendus quasi sed quisquam fuga laborum ullam, quis quae deserunt ex aperiam!
-				</p>
+				<p>Shirley Streshinsky, a 90-year-old  journalist, writer and widow, used to spend most of her time alone at her house in Kensington until recently as she took a fall and broke her arm. She graduated in 1956 with a journalism degree from University of Illinois, choosing the field as a practical way to make a living through writing. In her early 20s, she worked reporting jobs in Boston and Chicago and establishing herself in her career.</p>
+				<p>“And although I was married I didn’t plan to have children right away. It was somewhere in the future but in fact because of that I think I got a divorce from a very nice person,” she said.</p>
+				<p>After returning to Chicago, she married and later divorced her first husband. By 1966, at age 30, she moved to New York with her second husband and photojournalist Ted Streshinsky, whom she married that year. Together, they built careers as freelancers—Shirley writing for national magazines and Ted covering international photo assignments. She became a mother at 32, with the birth of her son Mark in 1967, followed by her daughter Maria in 1969.</p>
+				<p>Throughout her 30s and 40s, she balanced her work as a writer with raising her children. She and Ted managed their schedules so one parent was always home, especially in the early years. As her children grew older, she shifted into travel journalism in her late 40s and 50s, writing for outlets like The San Francisco Chronicle, Los Angeles Times and others. This allowed her to travel widely while continuing her professional writing career.</p>
+				<p>Throughout her 30s and 40s, she balanced her work as a writer with raising her children. She and Ted managed their schedules so one parent was always home, especially in the early years. As her children grew older, she shifted into travel journalism in her late 40s and 50s, writing for outlets like The San Francisco Chronicle, Los Angeles Times and others. This allowed her to travel widely while continuing her professional writing career.</p>
+				<p>In her 60s, she started spending more time writing personal essays, and after Ted’s death in 2003 at age 80, she continued living alone in her home. Now in her late 80s, Shirley has reduced her professional work due to health challenges, including a stroke and fall, but she remains creatively active.</p>
 			</div>
 		</div>
 	</div>
