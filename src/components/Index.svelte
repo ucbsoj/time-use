@@ -69,7 +69,7 @@
 	const paragraphs7 = [
 		`<h3>So why do women tend to stay alone more only when older?</h3>
 		<figure class="quote-with-photo">
-			<img src="/demo/assets/Leslie-photo.jpg" alt="Photo of Expert" class="expert-photo">
+			<img src="/assets/Leslie-photo.jpg" alt="Photo of Expert" class="expert-photo">
 			<figcaption>
 				<blockquote>
 					<p>"[Women] live longer than their male partners and because they don’t have children to care for. I do think stereotypes do give you some information and we know that women spend more time with kids and the divorce rate has increased and women live longer than men, so that over time women are spending more time alone sort of seems baked into those patterns."</p>
@@ -94,7 +94,7 @@
 	hed="How Do Americans Spend Their Time?"
 	byline="By Inaara Gangji, Anasooya Thorakkattu, WanYu Yao"
 	date="May 5, 2025"
-	src="/demo/assets/cover-image.svg"
+	src="/assets/cover-image.svg"
 	alt="How Americans Spend Their Time Cover Image"
 />
 
@@ -311,18 +311,18 @@
 		<div class="right">
 			<div class="right-inner">
 				{#if valueCalendarScroll === 0}
-					<img src="/demo/assets/24hours.png" alt="Scrollytelling visual 1" transition:crossfade/>
+					<img src="/assets/24hours.png" alt="Scrollytelling visual 1" transition:crossfade/>
 				{:else if valueCalendarScroll === 1}
-					<img src="/demo/assets/7days.png" alt="Scrollytelling visual 1" transition:crossfade/>
+					<img src="/assets/7days.png" alt="Scrollytelling visual 1" transition:crossfade/>
 				{:else if valueCalendarScroll === 2}
-					<img src="/demo/assets/year.png" alt="Scrollytelling visual 1" transition:crossfade/>
+					<img src="/assets/year.png" alt="Scrollytelling visual 1" transition:crossfade/>
 				{/if}
 			</div>
 		</div>
 	</section>
 
 	{#if valueCalendarScroll !== undefined}
-		<audio src="/demo/assets/tiktok.mp3" preload="auto" autoplay={true} loop={true}></audio>
+		<audio src="/assets/tiktok.mp3" preload="auto" autoplay={true} loop={true}></audio>
 	{/if}
 
 
@@ -334,7 +334,7 @@
 		<p>The way we now spend time alone was also shaped by something monumental we all experienced—together, yet in isolation.</p>
 		<!-- pandemic pic -->
 		<figure style="text-align: center;">
-			<img src="/demo/assets/pandemic.jpeg" alt="Pandemic" style="max-width: 100%;" />
+			<img src="/assets/pandemic.jpeg" alt="Pandemic" style="max-width: 100%;" />
 			<figcaption style="color: grey;">Image Source: Adobe Stock</figcaption>
 		  </figure>		  
 		<p>According to the <a href="https://enghinatalay.github.io/ei23.pdf">research at the Federal Reserve Bank of Philadelphia</a> done in 2023, alone time peaked in 2020, with Americans spending nearly 53% of their day alone—driven not just by the pandemic’s second wave, but also by a shifting population. A growing number of older and unmarried individuals accounted for nearly one-third of the overall rise in time spent alone.</p>
@@ -544,9 +544,9 @@
 		<div class="container-row">
 			<!-- Left column: profile image and audio player -->
 			<div class="media-column">
-			<img src="/demo/assets/annie-loop.gif" alt="Annie Chang" class="profile-img" />
+			<img src="/assets/annie-loop.gif" alt="Annie Chang" class="profile-img" />
 			<audio controls class="audio">
-				<source src="/demo/assets/annie-intv.m4a" type="audio/mpeg" />
+				<source src="/assets/annie-intv.m4a" type="audio/mpeg" />
 			</audio>
 			</div>
 		
@@ -563,9 +563,9 @@
 		<div class="container-row">
 			<!-- Left column: profile image and audio player -->
 			<div class="media-column">
-				<img src="/demo/assets/shirley-loop.gif" alt="Shirley Streshinsky" class="profile-img" />
+				<img src="/assets/shirley-loop.gif" alt="Shirley Streshinsky" class="profile-img" />
 				<audio controls class="audio">
-					<source src="/demo/assets/shirley-intv.m4a" type="audio/mpeg" />
+					<source src="/assets/shirley-intv.m4a" type="audio/mpeg" />
 				</audio>
 			</div>
 		

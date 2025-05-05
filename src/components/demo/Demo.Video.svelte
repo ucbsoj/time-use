@@ -13,7 +13,7 @@
 
 <div class="video-wrapper">
 	<Video
-		src="/demo/assets/test.mp4"
+		src="/assets/test.mp4"
 		caption="Pass in different properties to customize the video, like looping and autoplay."
 	/>
 </div>

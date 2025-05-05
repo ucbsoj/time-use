@@ -13,14 +13,14 @@
 </script>
 
 <Image
-	src="/demo/assets/test.jpg"
+	src="/assets/test.jpg"
 	alt="A lake and some clouds"
 	caption="This is a caption"
 />
 
 <div class="small">
 	<Image
-		src="/demo/assets/test.jpg"
+		src="/assets/test.jpg"
 		alt="A lake and some clouds"
 		caption="The image will fill the width and height of its container"
 	/>
@@ -28,7 +28,7 @@
 
 <div class="grid">
 	{#each [1, 2, 3, 4] as i}
-		<Image src="/demo/assets/test.jpg" alt="A lake and some clouds" />
+		<Image src="/assets/test.jpg" alt="A lake and some clouds" />
 	{/each}
 </div>
 

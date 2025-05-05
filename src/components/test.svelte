@@ -84,7 +84,7 @@
 		</Scrolly>
 	</div>
 
-	<div class="right-column" style="background-image: url('/demo/assets/time-bg.jpeg');">
+	<div class="right-column" style="background-image: url('/assets/time-bg.jpeg');">
 		<div class="illustration">
 			<img>
 	</div>
@@ -114,7 +114,7 @@
 
 	<div class="right">
 		<img
-			src="/demo/assets/7days.png"
+			src="/assets/7days.png"
 			alt="Scrollytelling visual 1"
 			class:image-zoom={value1 === 0}
 		/>
@@ -135,7 +135,7 @@
 
 	<div class="right">
 		<img
-			src="/demo/assets/24hours.png"
+			src="/assets/24hours.png"
 			alt="Scrollytelling visual 2"
 			class:image-zoom={value2 === 0}
 		/>
