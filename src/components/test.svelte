@@ -1,58 +1,148 @@
 <script>
-	import DemoHero from "$components/demo/Demo.Hero.svelte";
-	import DemoScrolly from "$components/demo/Demo.Scrolly.svelte";
-	import DemoImages from "$components/demo/Demo.Images.svelte";
-	import DemoVideo from "$components/demo/Demo.Video.svelte";
+	import Scrolly from '$components/helpers/Scrolly.svelte'; // adjust if needed
 
-	/*
-		This is a demonstration of all the helper components.
-	*/
+	let value1 = $state();
+	let value2 = $state();
+	let value3 = $state();
+
+	const paragraphs1 = [
+		"Paragraph 1: This is the beginning of the story. Scroll to see more.",
+		"Paragraph 2: Here's the continuation of the story with more details."
+	];
+
+	const paragraphs2 = [
+		"Paragraph 3: This is the next section with a new image.",
+		"Paragraph 4: More insight continues here."
+	];
+
+	const paragraphs3 = [
+		"Paragraph 5: This is the final section of the story.",
+		"Paragraph 6: Thank you for scrolling through!"
+	];
 </script>
 
-<div id="demo">
-	<DemoHero />
-
-	<div class="text">
-		<p>Here are some examples of paragraphs.</p>
-
-		<p>
-			You should wrap your text in a container with a maximum height and the
-			margin set to "0 auto". That way, it's centered on the screen and looks
-			like a nice column.
-		</p>
-
-		<p>
-			Here's a new paragraph. These p tags automatically have some space in
-			between them. You can make some of your text <strong
-				>bold, like this</strong
-			>. Or italics, <i>like this</i>. Maybe you want to include a link to an
-			external source, you could do that
-			<a href="https://www.google.com/maps/">like this</a>.
-		</p>
-
-		<section>
-			<DemoImages />
-		</section>
-
-		<section>
-			<DemoVideo />
-		</section>
-
-		<section>
-			<DemoScrolly />
-		</section>
-	</div>
-</div>
-
 <style>
-	.text {
-		max-width: 40rem;
-		padding: 16px;
-		margin: 0 auto;
+	section {
+		display: flex;
+		gap: 2rem;
+		padding: 2rem 2rem 8rem;
 	}
 
-	section {
-		margin: 32px auto;
-		padding-top: 32px;
+	.left-text {
+		flex: 1;
+	}
+
+	.right-column {
+		flex: 1;
+		position: sticky;
+		top: 0;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	img {
+		max-width: 100%;
+		max-height: 90vh;
+		object-fit: contain;
+		border: 2px solid #ccc;
+		border-radius: 8px;
+		transition: transform 0.3s ease;
+	}
+
+
+	.step {
+		margin: 80vh 0;
+		font-size: 1.2rem;
+		background: #f4f4f4;
+		padding: 1rem;
+		border-radius: 6px;
+		transition: background 0.3s;
+	}
+
+	.step.active {
+		background: #e0f7fa;
+	}
+
+	.text {
+		font-size: 1.2rem;
+		line-height: 1.5;
+		margin: 4rem 2rem;
+		max-width: 60ch;
 	}
 </style>
+
+<section>
+	<div class="left-text">
+		<Scrolly bind:value={value97}>
+			{#each paragraphs97 as text, i}
+				<div class="step" class:active={value2 === i}>
+					<p>{text}</p>
+				</div>
+			{/each}
+		</Scrolly>
+	</div>
+
+	<div class="right-column" style="background-image: url('/demo/assets/time-bg.jpeg');">
+		<div class="illustration">
+			<img>
+	</div>
+</section>
+
+
+<!-- Before scrollytelling -->
+<div class="text">
+	<p>This is some content before the scrollytelling sections begin.</p>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsam, sit placeat et quibusdam laudantium ducimus error odio maiores ipsa velit nisi sed atque exercitationem quos quia. Vel, est. Magni?</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A laudantium eum commodi accusantium illo ad necessitatibus impedit! Rerum enim harum ea sint aspernatur possimus alias illum, soluta quisquam aliquid ratione!</p>
+	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic facilis quis, eveniet eaque tempore maiores dolores cumque soluta in deserunt! Impedit obcaecati, tempora minus illum tempore consequuntur placeat sit pariatur.</p>
+	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas excepturi, consequatur optio eveniet quasi dicta at quia illum. Adipisci eligendi quas quod nostrum tempora corrupti explicabo vel maxime dolores vitae.</p>
+</div>
+
+<!-- Scrollytelling Section 1 -->
+<section>
+	<div class="left">
+		<Scrolly bind:value={value1}>
+			{#each paragraphs1 as text, i}
+				<div class="step" class:active={value1 === i}>
+					<p>{text}</p>
+				</div>
+			{/each}
+		</Scrolly>
+	</div>
+
+	<div class="right">
+		<img
+			src="/demo/assets/7days.png"
+			alt="Scrollytelling visual 1"
+			class:image-zoom={value1 === 0}
+		/>
+	</div>
+</section>
+
+<!-- Scrollytelling Section 2 -->
+<section>
+	<div class="left">
+		<Scrolly bind:value={value2}>
+			{#each paragraphs2 as text, i}
+				<div class="step" class:active={value2 === i}>
+					<p>{text}</p>
+				</div>
+			{/each}
+		</Scrolly>
+	</div>
+
+	<div class="right">
+		<img
+			src="/demo/assets/24hours.png"
+			alt="Scrollytelling visual 2"
+			class:image-zoom={value2 === 0}
+		/>
+	</div>
+</section>
+
+<!-- After scrollytelling -->
+<div class="text">
+	<p>This is some final content after all the scrollytelling is done.</p>
+</div>
