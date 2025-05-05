@@ -94,7 +94,7 @@
 	hed="How Do Americans Spend Their Time?"
 	byline="By Inaara Gangji, Anasooya Thorakkattu, WanYu Yao"
 	date="May 5, 2025"
-	src="/assets/cover-image.svg"
+	src="assets/cover-image.svg"
 	alt="How Americans Spend Their Time Cover Image"
 />
 
