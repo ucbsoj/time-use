@@ -41,5 +41,6 @@
 		background: rgba(0, 0, 0, 0.5);
 		padding: 0 1rem;
 		text-align: center;
+		font-family: 'Times New Roman', Times, serif;
 	}
 </style>

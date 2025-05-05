@@ -67,17 +67,20 @@
 	];
 
 	const paragraphs7 = [
-	`<h3>So why do women tend to stay alone more only when older?</h3>
-	<figure class="quote-with-photo">
-		<img src="/demo/assets/Leslie-photo.jpg" alt="Photo of Expert" class="expert-photo">
-		<blockquote>
-			<p>"[Women] live longer than their male partners and because they don’t have children to care for. I do think stereotypes do give you some information and we know that women spend more time with kids and the divorce rate has increased and women live longer than men, so that over time women are spending more time alone sort of seems baked into those patterns."</p>
-		</blockquote>
-	</figure>
-			<p>- Leslie Salzinger, UC Berkeley Professor in Gender Studies</p>`,
-	`<p>Chang says she was more sociable in her 20s – besides working over 40 hours a week – hanging out with friends and her pet. When getting into 30s, she became more isolated but comfortable with the change. “I am very happy being alone as a single person, but sometimes craving to be with other people,” she said.</p>`,
-	`<p>Shirley is also quite content and almost used to being alone too although it does take her longer to do things at an older age. When younger, she decided to forego her first marriage for her career because she was young but decided to take on most of the caregiving in her second marriage as her partner traveled. He passed away when she was 68.</p>`
+		`<h3>So why do women tend to stay alone more only when older?</h3>
+		<figure class="quote-with-photo">
+			<img src="/demo/assets/Leslie-photo.jpg" alt="Photo of Expert" class="expert-photo">
+			<figcaption>
+				<blockquote>
+					<p>"[Women] live longer than their male partners and because they don’t have children to care for. I do think stereotypes do give you some information and we know that women spend more time with kids and the divorce rate has increased and women live longer than men, so that over time women are spending more time alone sort of seems baked into those patterns."</p>
+					<p class="expert-credit">– Leslie Salzinger, UC Berkeley Professor in Gender Studies</p>
+				</blockquote>
+			</figcaption>
+		</figure>`,
+		`<p>Chang says she was more sociable in her 20s – besides working over 40 hours a week – hanging out with friends and her pet. When getting into 30s, she became more isolated but comfortable with the change. “I am very happy being alone as a single person, but sometimes craving to be with other people,” she said.</p>`,
+		`<p>Shirley is also quite content and almost used to being alone too although it does take her longer to do things at an older age. When younger, she decided to forego her first marriage for her career because she was young but decided to take on most of the caregiving in her second marriage as her partner traveled. He passed away when she was 68.</p>`
 	];
+
 
 	const paragraphs8 = [
 	"Women from the age of 57 start spending less time with a partner, the lowest being only 2.85 hours. Salzinger explained that this is when most partners pass away as women tend to outlive men because of biological reasons, but also sociological reasons such as men doing more physically hazardous jobs."
@@ -125,7 +128,9 @@
 	max-width: 52em;
 	margin: 2em auto;
 	gap: 2em; 
-	
+	background-color: #FFF5EE;
+	border-radius: 5%;
+	padding: 2em;
 	}
 
 	/* CSS for bios */
@@ -164,35 +169,38 @@
 	justify-content: center;
 	}
 
-	/* CSS for scrollytelling calendar */
-	
-
-	
 
 	/* CSS for html scrolling section */
-	/* .quote-with-photo {
+	:global(.quote-with-photo) {
 	display: flex;
 	align-items: flex-start;
 	gap: 1rem;
 	margin-top: 1rem;
-	} */
+	}
 
 	:global(.expert-photo) {
-		width: 40px;
-		height: 40px;
+		width: 80px;
+		height: 100px;
 		object-fit: cover;
-		border-radius: 50%;
+		border-radius: 30%;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 		margin-right: 0.75rem;
 		vertical-align: middle;
 	} 
 
 
-	/* blockquote {
+	:global(.blockquote) {
 		margin: 0;
 		font-style: italic;
 		color: #444;
-	}	 */
+	}
+
+	:global(.expert-credit) {
+	margin-top: 0.5rem;
+	color: #666;
+	font-style: normal;
+	font-size: 0.9rem;
+	}
 
 
 	/* CSS for scrolling section graphics */
@@ -249,6 +257,7 @@
 		padding: 1rem;
 		transition: background 0.3s;
 		border-left: 4px solid #007acc;
+		font-family: 'Times New Roman', Times, serif;
 	}
 
 	.step.active {
@@ -260,12 +269,14 @@
 	h3{
 		max-width: 100%;
 		margin: auto auto;
+		font-family: 'Times New Roman', Times, serif;
 	}
 
 	.text {
 		max-width: 40rem;
 		padding: 16px;
 		margin: auto auto;
+		font-family: 'Times New Roman', Times, serif;
 	}
 
 	.container {
@@ -311,7 +322,7 @@
 	</section>
 
 	{#if valueCalendarScroll !== undefined}
-		<audio src="/demo/assets/tiktok.mp3" autoplay={true} loop={true}/>
+		<audio src="/demo/assets/tiktok.mp3" preload="auto" autoplay={true} loop={true}></audio>
 	{/if}
 
 
@@ -533,7 +544,7 @@
 		<div class="container-row">
 			<!-- Left column: profile image and audio player -->
 			<div class="media-column">
-			<img src="/demo/assets/annie-chang-loop.gif" alt="Annie Chang" class="profile-img" />
+			<img src="/demo/assets/annie-loop.gif" alt="Annie Chang" class="profile-img" />
 			<audio controls class="audio">
 				<source src="/demo/assets/annie-intv.m4a" type="audio/mpeg" />
 			</audio>
@@ -541,16 +552,10 @@
 		
 			<!-- Right column: text content -->
 			<div class="text-column">
-			<h3>Annie Chang</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit delectus cum doloremque ea perspiciatis cumque nam, esse reiciendis laboriosam iusto autem sunt ipsa odit eum voluptates aliquid? Voluptatem, cum?
-			</p>
-			<p>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magnam ab rerum pariatur laudantium est eum. Dolores asperiores aliquam iusto saepe voluptate libero excepturi. Iure minus harum fuga ullam. Doloribus.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quas. Optio incidunt repudiandae, voluptatem temporibus ducimus hic voluptatibus repellendus quasi sed quisquam fuga laborum ullam, quis quae deserunt ex aperiam!
-			</p>
+				<h3>Annie Chang</h3>
+				<p>At 41, Annie Chang looks back on a life shaped by the structure and drive of a disciplined, work-focused household. She describes herself as a late bloomer who spent her twenties learning and evolving while following in her sister’s footsteps. It was not until her early thirties that she began Annie who currently lives in Berkeley now spends her time working 40 hours a week while she spends around 30 hours with her family. But this was not always the case. 			</p>
+				<p>According to her, she used to work 40-60 hours a week on average during her twenties and thirties. Over time, she embraced solitude and personal growth, finding balance through meditation, volunteering, and time with her close-knit family and community. While she once envisioned a more traditional path, her experiences shaped a life centered on independence, self-reflection, and meaningful connection. Looking ahead, she imagines a peaceful future surrounded by nature, possibly working with animals or giving back through therapeutic and volunteer work.			</p>
+				<p>“But I think I realized like over time that yes, like in my thirties, I was increasingly spending more and more time alone you know, just by choice or by default. But that’s also been a comfort of being alone. I just feel like there is a lot of independence to that, so I prefer that”, she said.			</p>
 			</div>
 		</div>
 
@@ -558,7 +563,7 @@
 		<div class="container-row">
 			<!-- Left column: profile image and audio player -->
 			<div class="media-column">
-				<img src="/demo/assets/shirley.gif" alt="Grandma" class="profile-img" />
+				<img src="/demo/assets/shirley-loop.gif" alt="Shirley Streshinsky" class="profile-img" />
 				<audio controls class="audio">
 					<source src="/demo/assets/shirley-intv.m4a" type="audio/mpeg" />
 				</audio>

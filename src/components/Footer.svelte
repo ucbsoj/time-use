@@ -11,5 +11,7 @@
 		color: white;
 		padding: 1rem;
 		text-align: center;
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 1.2rem;
 	}
 </style>
