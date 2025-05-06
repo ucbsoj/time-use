@@ -48,9 +48,7 @@
 	];
 
 	const paragraphs3 = [
-		"Men in their middle ages spent more time alone than women. An average 34-year-old man spends 5 and a half hours alone in their life, while a woman spends that time with their children. In 5.5 hours you could, (finish watching the entire Back to The Future Trilogy, or watch the whole Season 1 of Stranger Things, alone).",
-		"Over the past 30 years, children have received increased attention and care, according to Leslie Salzinger, Associate Professor and Chair of Gender and Women’s Studies at UC Berkeley. The gap remains largely unchanged, even though men are spending more time with their children—because women’s caregiving time has increased proportionally as well."
-		];
+		"Men in their middle ages spent more time alone than women. An average 34-year-old man spends 5 and a half hours alone in their life, while a woman spends that time with their children. In 5.5 hours you could, (finish watching the entire Back to The Future Trilogy, or watch the whole Season 1 of Stranger Things, alone)."		];
 
 	const paragraphs4 = [
 		"From age 34-44, most men tend to spend more time with their co-workers than with their partners. This was also the year where men showed the highest labor force participation rate of all age groups than women."
@@ -277,6 +275,7 @@
 		padding: 16px;
 		margin: auto auto;
 		font-family: 'Times New Roman', Times, serif;
+		font-size: 1.2rem;
 	}
 
 	.container {
