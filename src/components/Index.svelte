@@ -120,15 +120,27 @@
 		background-color: white
 	}
 
+	.last-container{
+		background-color: #F2D49E;
+	}
+
+
+	.container-wrapper {
+	display: flex;
+	justify-content: center;
+	width:	65vw;
+	margin: 0 auto;
+	background-color: #F2D49E;
+	}
+
 	.container-row {
 	display: flex;
-	align-items: center;
-	max-width: 52em;
-	margin: 2em auto;
+	width: 65vw;
 	gap: 2em; 
 	background-color: #FFF5EE;
 	border-radius: 5%;
 	padding: 2em;
+	margin-bottom: 2em;	
 	}
 
 	/* CSS for bios */
@@ -539,46 +551,54 @@
 
 	<div class="text">
 		<h3>Voices Behind the Numbers: How Do People Spend Time in Daily Lives?</h3>
-		<!-- First Profile -->
-		<div class="container-row">
-			<!-- Left column: profile image and audio player -->
-			<div class="media-column">
-			<img src="assets/annie-loop.gif" alt="Annie Chang" class="profile-img" />
-			<audio controls class="audio">
-				<source src="assets/annie-intv.m4a" type="audio/mpeg" />
-			</audio>
-			</div>
-		
-			<!-- Right column: text content -->
-			<div class="text-column">
-				<h3>Annie Chang</h3>
-				<p>At 41, Annie Chang looks back on a life shaped by the structure and drive of a disciplined, work-focused household. She describes herself as a late bloomer who spent her twenties learning and evolving while following in her sister’s footsteps. It was not until her early thirties that she began Annie who currently lives in Berkeley now spends her time working 40 hours a week while she spends around 30 hours with her family. But this was not always the case. 			</p>
-				<p>According to her, she used to work 40-60 hours a week on average during her twenties and thirties. Over time, she embraced solitude and personal growth, finding balance through meditation, volunteering, and time with her close-knit family and community. While she once envisioned a more traditional path, her experiences shaped a life centered on independence, self-reflection, and meaningful connection. Looking ahead, she imagines a peaceful future surrounded by nature, possibly working with animals or giving back through therapeutic and volunteer work.			</p>
-				<p>“But I think I realized like over time that yes, like in my thirties, I was increasingly spending more and more time alone you know, just by choice or by default. But that’s also been a comfort of being alone. I just feel like there is a lot of independence to that, so I prefer that”, she said.			</p>
-			</div>
-		</div>
-
-		<!-- Second Profile -->
-		<div class="container-row">
-			<!-- Left column: profile image and audio player -->
-			<div class="media-column">
-				<img src="assets/shirley-loop.gif" alt="Shirley Streshinsky" class="profile-img" />
-				<audio controls class="audio">
-					<source src="assets/shirley-intv.m4a" type="audio/mpeg" />
-				</audio>
-			</div>
-		
-			<!-- Right column: text content -->
-			<div class="text-column">
-				<h3>Shirley Streshinsky</h3>
-				<p>Shirley Streshinsky, a 90-year-old  journalist, writer and widow, used to spend most of her time alone at her house in Kensington until recently as she took a fall and broke her arm. She graduated in 1956 with a journalism degree from University of Illinois, choosing the field as a practical way to make a living through writing. In her early 20s, she worked reporting jobs in Boston and Chicago and establishing herself in her career.</p>
-				<p>“And although I was married I didn’t plan to have children right away. It was somewhere in the future but in fact because of that I think I got a divorce from a very nice person,” she said.</p>
-				<p>After returning to Chicago, she married and later divorced her first husband. By 1966, at age 30, she moved to New York with her second husband and photojournalist Ted Streshinsky, whom she married that year. Together, they built careers as freelancers—Shirley writing for national magazines and Ted covering international photo assignments. She became a mother at 32, with the birth of her son Mark in 1967, followed by her daughter Maria in 1969.</p>
-				<p>Throughout her 30s and 40s, she balanced her work as a writer with raising her children. She and Ted managed their schedules so one parent was always home, especially in the early years. As her children grew older, she shifted into travel journalism in her late 40s and 50s, writing for outlets like The San Francisco Chronicle, Los Angeles Times and others. This allowed her to travel widely while continuing her professional writing career.</p>
-				<p>Throughout her 30s and 40s, she balanced her work as a writer with raising her children. She and Ted managed their schedules so one parent was always home, especially in the early years. As her children grew older, she shifted into travel journalism in her late 40s and 50s, writing for outlets like The San Francisco Chronicle, Los Angeles Times and others. This allowed her to travel widely while continuing her professional writing career.</p>
-				<p>In her 60s, she started spending more time writing personal essays, and after Ted’s death in 2003 at age 80, she continued living alone in her home. Now in her late 80s, Shirley has reduced her professional work due to health challenges, including a stroke and fall, but she remains creatively active.</p>
-			</div>
-		</div>
 	</div>
 </div>
+		<!-- First Profile -->
+	<div class="last-container">
+		<div class="container-wrapper">
+			<div class="container-row">
+				<!-- Left column: profile image and audio player -->
+				<div class="media-column">
+				<img src="assets/annie-loop.gif" alt="Annie Chang" class="profile-img" />
+				<audio controls class="audio">
+					<source src="assets/annie-intv.m4a" type="audio/mpeg" />
+				</audio>
+				</div>
+			
+				<!-- Right column: text content -->
+				<div class="text-column">
+					<h3>Annie Chang</h3>
+					<p>At 41, Annie Chang looks back on a life shaped by the structure and drive of a disciplined, work-focused household. She describes herself as a late bloomer who spent her twenties learning and evolving while following in her sister’s footsteps. It was not until her early thirties that she began Annie who currently lives in Berkeley now spends her time working 40 hours a week while she spends around 30 hours with her family. But this was not always the case. 			</p>
+					<p>According to her, she used to work 40-60 hours a week on average during her twenties and thirties. Over time, she embraced solitude and personal growth, finding balance through meditation, volunteering, and time with her close-knit family and community. While she once envisioned a more traditional path, her experiences shaped a life centered on independence, self-reflection, and meaningful connection. Looking ahead, she imagines a peaceful future surrounded by nature, possibly working with animals or giving back through therapeutic and volunteer work.			</p>
+					<p>“But I think I realized like over time that yes, like in my thirties, I was increasingly spending more and more time alone you know, just by choice or by default. But that’s also been a comfort of being alone. I just feel like there is a lot of independence to that, so I prefer that”, she said.			</p>
+				</div>
+			</div>
+		</div>
+		<!-- Profile 1 End -->
+
+			<!-- Second Profile -->
+		<div class="container-wrapper">
+			<div class="container-row">
+				<!-- Left column: profile image and audio player -->
+				<div class="media-column">
+					<img src="assets/shirley-loop.gif" alt="Shirley Streshinsky" class="profile-img" />
+					<audio controls class="audio">
+						<source src="assets/shirley-intv.m4a" type="audio/mpeg" />
+					</audio>
+				</div>
+	
+			<!-- Right column: text content -->
+				<div class="text-column">
+					<h3>Shirley Streshinsky</h3>
+					<p>Shirley Streshinsky, a 90-year-old  journalist, writer and widow, used to spend most of her time alone at her house in Kensington until recently as she took a fall and broke her arm. She graduated in 1956 with a journalism degree from University of Illinois, choosing the field as a practical way to make a living through writing. In her early 20s, she worked reporting jobs in Boston and Chicago and establishing herself in her career.</p>
+					<p>“And although I was married I didn’t plan to have children right away. It was somewhere in the future but in fact because of that I think I got a divorce from a very nice person,” she said.</p>
+					<p>After returning to Chicago, she married and later divorced her first husband. By 1966, at age 30, she moved to New York with her second husband and photojournalist Ted Streshinsky, whom she married that year. Together, they built careers as freelancers—Shirley writing for national magazines and Ted covering international photo assignments. She became a mother at 32, with the birth of her son Mark in 1967, followed by her daughter Maria in 1969.</p>
+					<p>Throughout her 30s and 40s, she balanced her work as a writer with raising her children. She and Ted managed their schedules so one parent was always home, especially in the early years. As her children grew older, she shifted into travel journalism in her late 40s and 50s, writing for outlets like The San Francisco Chronicle, Los Angeles Times and others. This allowed her to travel widely while continuing her professional writing career.</p>
+					<p>Throughout her 30s and 40s, she balanced her work as a writer with raising her children. She and Ted managed their schedules so one parent was always home, especially in the early years. As her children grew older, she shifted into travel journalism in her late 40s and 50s, writing for outlets like The San Francisco Chronicle, Los Angeles Times and others. This allowed her to travel widely while continuing her professional writing career.</p>
+					<p>In her 60s, she started spending more time writing personal essays, and after Ted’s death in 2003 at age 80, she continued living alone in her home. Now in her late 80s, Shirley has reduced her professional work due to health challenges, including a stroke and fall, but she remains creatively active.</p>
+				</div>
+			</div>
+		</div>
+		<!-- Profile 2 End -->
+	</div>
 <Footer />
